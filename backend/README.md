@@ -62,7 +62,7 @@ Health check endpoint to verify the server is running.
 
 When running the app on a physical device or emulator, you'll need to ensure the backend URL is correctly set in the mobile app configuration.
 
-- For emulator: Use `http://10.0.2.2:3000` (Android emulator's special IP for localhost)
+- For emulator: Use `http://localhost:3000/` (Android emulator's special IP for localhost)
 - For physical device: Use your computer's local network IP (e.g., `http://192.168.1.100:3000`)
 
 Make sure your phone and computer are on the same network when testing with a physical device.
