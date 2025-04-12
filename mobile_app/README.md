@@ -28,7 +28,7 @@ flutter pub get
 ```
 
 4. Update the API URL in `lib/services/chat_service.dart`:
-   - For emulator: `http://localhost:3000/`
+   - For emulator: `http://10.0.2.2:3000`
    - For physical device: use your computer's local network IP (e.g., `http://192.168.1.100:3000`)
 
 5. Run the app:
@@ -60,9 +60,13 @@ The APK will be available at: `build/app/outputs/flutter-apk/app-release.apk`
   - `widgets/` - Reusable UI components
     - `chat_bubble.dart` - Message bubble design
     - `typing_indicator.dart` - Animated typing indicator
+  - `core/` - Core logic and components
+    - `theme.dart` - Core Theme of the app, containing both light and dart themes
+  - `providers` - Application providers
+    - `theme_provider.dart` - Theme provider for the application
 
 ## Customization
 
-- Theme colors can be modified in `lib/main.dart`
+- Theme colors can be modified in `lib/core/theme.dart`
 - Message bubble styling can be adjusted in `lib/widgets/chat_bubble.dart`
 - Backend API URL can be changed in `lib/services/chat_service.dart`

@@ -22,7 +22,7 @@ npm install
 Start the server with:
 
 ```bash
-node server.js
+npm start
 ```
 
 The server will run on port 3000 by default. You can change this by setting the `PORT` environment variable.
