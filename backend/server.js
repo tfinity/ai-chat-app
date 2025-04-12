@@ -21,12 +21,23 @@ app.post('/chat', (req, res) => {
     let reply = "I'm sorry, I didn't understand that.";
   
     if (message.toLowerCase().includes('hello') || message.toLowerCase().includes('hi')) {
-      reply = "Hi there! How can I help you today?";
+      reply = "Hi! I'm your AI assistant. How can I help you today?";
     } else if (message.toLowerCase().includes('how are you')) {
       reply = "I'm just a computer program, but I'm functioning well!";
     } else if (message.toLowerCase().includes('bye')) {
       reply = "Goodbye! Have a great day!";
+    } else if (message.toLowerCase().includes('what is your name')) {
+      reply = "I'm your AI assistant. You can call me AI.";
+    } else if (message.toLowerCase().includes('what is your purpose')) {
+      reply = "My purpose is to help you with your questions and provide information.";
+    } else if (message.toLowerCase().includes('what is your favorite color')) {
+      reply = "I don't have a favorite color, but I'm blue!";
+    } else if (message.toLowerCase().includes('what is your favorite food')) {
+      reply = "I'm a computer program, so I don't eat food.";
+    } else if (message.toLowerCase().includes('what is your favorite movie')) {
+      reply = "I don't have a favorite movie, but I'm a fan of The Matrix.";
     }
+    
 
   setTimeout(() => {
     res.json({ reply });
