@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/widgets/theme_toggle.dart';
 import '../models/message.dart';
 import '../services/chat_service.dart';
 import '../widgets/chat_bubble.dart';
@@ -119,12 +120,7 @@ class _ChatScreenState extends State<ChatScreen> {
           ],
         ),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.more_vert),
-            onPressed: () {
-              // Show settings or menu
-            },
-          ),
+          ThemeToggle(),
         ],
       ),
       body: SafeArea(
