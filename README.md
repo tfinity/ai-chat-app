@@ -9,10 +9,6 @@ This project consists of two main components:
 1. **Mobile App**: A Flutter application with a sleek chat interface
 2. **Backend API**: A Node.js REST API that responds to chat messages
 
-## Demo Video
-
-[Link to Loom video demonstration]
-
 ## Mobile App Features
 
 - Modern, intuitive chat UI with custom chat bubbles
